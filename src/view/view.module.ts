@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ViewBodyComponent } from 'src/view/view-body/view-body.component';
 import { ContentComponent } from 'src/view/content/content.component';
+import { HeaderBarComponent } from 'src/view/header-bar/header-bar.component';
 
 @NgModule({
   imports: [
@@ -9,11 +10,13 @@ import { ContentComponent } from 'src/view/content/content.component';
   ],
   declarations: [
     ViewBodyComponent,
-    ContentComponent
+    ContentComponent,
+    HeaderBarComponent
   ],
   exports: [
     ViewBodyComponent,
-    ContentComponent
+    ContentComponent,
+    HeaderBarComponent
   ]
 })
 export class ViewModule { }
