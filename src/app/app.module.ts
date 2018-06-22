@@ -6,7 +6,7 @@ import { ViewModule } from 'src/view/view.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
