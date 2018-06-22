@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ViewBodyComponent } from 'src/view/view-body/view-body.component';
 import { ContentComponent } from 'src/view/content/content.component';
 import { HeaderBarComponent } from 'src/view/header-bar/header-bar.component';
+import { ViewConfigService } from 'src/view/services/view-config.service';
+import { TopBarComponent } from 'src/view/top-bar/top-bar.component';
 
 @NgModule({
   imports: [
@@ -11,12 +13,14 @@ import { HeaderBarComponent } from 'src/view/header-bar/header-bar.component';
   declarations: [
     ViewBodyComponent,
     ContentComponent,
-    HeaderBarComponent
+    HeaderBarComponent,
+    TopBarComponent
+  ],
+  providers: [
+    ViewConfigService
   ],
   exports: [
     ViewBodyComponent,
-    ContentComponent,
-    HeaderBarComponent
   ]
 })
 export class ViewModule { }
