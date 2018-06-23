@@ -5,6 +5,8 @@ import { ContentComponent } from 'src/view/content/content.component';
 import { HeaderBarComponent } from 'src/view/header-bar/header-bar.component';
 import { ViewConfigService } from 'src/view/services/view-config.service';
 import { TopBarComponent } from 'src/view/top-bar/top-bar.component';
+import { FooterComponent } from 'src/view/footer/footer.component';
+import { ScreenService } from 'src/view/services/screen.service';
 
 @NgModule({
   imports: [
@@ -14,10 +16,12 @@ import { TopBarComponent } from 'src/view/top-bar/top-bar.component';
     ViewBodyComponent,
     ContentComponent,
     HeaderBarComponent,
-    TopBarComponent
+    TopBarComponent,
+    FooterComponent
   ],
   providers: [
-    ViewConfigService
+    ViewConfigService,
+    ScreenService
   ],
   exports: [
     ViewBodyComponent,

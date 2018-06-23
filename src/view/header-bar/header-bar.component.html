@@ -1,6 +1,14 @@
-<div class="header-bar">
-  <img src="assets/logo.jpg" alt="logo">
-  <div class="menu-section">
+<div *ngIf='!screenService.isLarge()' class='header-bar-small'>
+  <span >&#9776;</span>
+  <div class='small-image-holder'>
+    <img src="assets/logo.jpg" class='small-image'>
+  </div>
+  <span></span>
+</div>
+
+<div *ngIf='screenService.isLarge()' class='header-bar'>
+  <img src='assets/logo.jpg' alt='logo'>
+  <div class='menu-section'>
     <view-top-bar></view-top-bar>
     <!-- menu -->
   </div>

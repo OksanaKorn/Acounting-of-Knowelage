@@ -22,7 +22,7 @@ a {
 
 .flag {
     width: 22px;
-    height: 16px;
+    height: auto;
     vertical-align: middle;
 }
 
